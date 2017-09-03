@@ -1,4 +1,11 @@
-import {LIST_CATEGORIES,GET_POSTS,POST_A_POST_SUCCESS,POST_A_POST} from '../actions'
+import {
+    LIST_CATEGORIES,
+    GET_POSTS,
+    POST_A_POST_SUCCESS,
+    GET_POST_DETAIL_SUCCESS,
+    GET_POST_COMMENTS_SUCCESS,
+    POST_COMMENT_SUCCESS
+} from '../actions'
 import {combineReducers} from 'redux'
 
 const categoryState= {
@@ -44,7 +51,45 @@ function postsReducer(state=postsState,action) {
     }
 }
 
+const postDetailState={
+    details:{}
+}
+
+function postDetailsReducer(state=postDetailState,action) {
+    switch (action.type){
+        case GET_POST_DETAIL_SUCCESS:{
+            return {...state,details:action.payload}
+        }
+        default:{
+            return state
+        }
+    }
+}
+
+const getCommentsState={
+    comments:[]
+}
+
+function getCommentsReducer(state=getCommentsState,action) {
+    switch (action.type){
+        case GET_POST_COMMENTS_SUCCESS:{
+            return {...state,comments:action.payload}
+        }
+        case POST_COMMENT_SUCCESS:{
+            return {...state,comments:[...state.comments,action.payload]}
+        }
+        default:{
+            return state
+        }
+    }
+}
+
+
+
+
 export default combineReducers({
     categoryReducer,
-    postsReducer
+    postsReducer,
+    postDetailsReducer,
+    getCommentsReducer
 })

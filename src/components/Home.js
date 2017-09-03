@@ -65,14 +65,16 @@ class Home extends React.Component{
         })
         const mappedPosts=posts.map((post)=>(
             <Col xs={12} md={12} sm={12} lg={12} key={post.id} style={{marginBottom:'20px'}}>
-                <Card>
-                    <CardHeader
-                        title={post.author}
-                        subtitle={`posted in ${post.category}`}
-                    />
-                    <CardTitle title={post.title} subtitle={`posted on ${toDate(post.timestamp)}`} />
-                    <CardText>{post.body}</CardText>
-                </Card>
+                <Link to={`${post.category}/posts/${post.id}`}>
+                    <Card>
+                        <CardHeader
+                            title={post.author}
+                            subtitle={`posted in ${post.category}`}
+                        />
+                        <CardTitle title={post.title} subtitle={`posted on ${toDate(post.timestamp)}`} />
+                        <CardText>{post.body}</CardText>
+                    </Card>
+                </Link>
             </Col>
         ))
         return(

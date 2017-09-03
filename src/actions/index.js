@@ -42,9 +42,86 @@ export function postAPost(title,body,author,category) {
 }
 
 export function postAPostSuccess(data) {
-    console.log('Post Success data: ',data)
     return{
         type:POST_A_POST_SUCCESS,
         payload:data.data
+    }
+}
+
+export const GET_POST_DETAIL_SUCCESS='GET_POST_DETAIL_SUCCESS'
+
+export function getPostDetails(id) {
+    return function (dispatch) {
+        axios({
+            method:'get',
+            url:`http://localhost:5001/posts/${id}`,
+            headers:{
+                'Authorization':'Let\'s make a coffee!'
+            }
+        }).then((data)=>{
+            dispatch(getPostDetailsSuccess(data.data))
+        })
+    }
+}
+
+export function getPostDetailsSuccess(data) {
+    return{
+        type:GET_POST_DETAIL_SUCCESS,
+        payload:data
+    }
+}
+
+export const GET_POST_COMMENTS_SUCCESS='GET_POST_COMMENTS_SUCCESS'
+
+export function getPostComments(id) {
+    return function (dispatch) {
+        axios({
+            method:'get',
+            url:`http://localhost:5001/posts/${id}/comments`,
+            headers:{
+                'Authorization':'Sun is up in Bengaluru city!'
+            }
+        }).then((data)=>{
+            dispatch(getPostCommentsSuccess(data.data))
+        })
+    }
+}
+
+export function getPostCommentsSuccess(data) {
+    console.log(data)
+    return{
+        type:GET_POST_COMMENTS_SUCCESS,
+        payload:data
+    }
+}
+
+export const POST_COMMENT_SUCCESS='POST_COMMENT_SUCCESS'
+
+export function postComment(id,body,author) {
+    return function (dispatch) {
+        axios({
+            method:'post',
+            url:'http://localhost:5001/comments',
+            data:{
+                parentId:id,
+                body,
+                author,
+                id:uuidv1(),
+                timestamp:Date.now()
+            },
+            headers:{
+                'Authorization':'Bengaluru is cool!'
+            }
+        }).then((data)=>{
+            dispatch(postCommentSuccess(data.data))
+        })
+    }
+}
+
+function postCommentSuccess(data){
+    console.log(data)
+    return{
+        type:POST_COMMENT_SUCCESS,
+        payload:data
     }
 }

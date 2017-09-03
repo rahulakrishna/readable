@@ -3,10 +3,11 @@ import './App.css'
 import AppBar from 'material-ui/AppBar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {green500,white} from 'material-ui/styles/colors'
-import {Route,Router} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 import Home from './components/Home'
 import CategoryPage from './components/CategoryPage'
+import PostPage from './components/PostPage'
 
 import IconButton from 'material-ui/IconButton'
 import FileIcon from 'material-ui/svg-icons/action/book'
@@ -27,15 +28,18 @@ class App extends Component {
                   style={{background:green500}}
                   iconElementLeft={<IconButton><FileIcon/></IconButton>}
               />
-              <Route
-                  exact path="/"
-                  component={Home}
-              />
-              <Route
-                exact path="/:category/posts"
-                component={CategoryPage}
-              />
-
+                <Route
+                    exact path="/"
+                    component={Home}
+                />
+                <Route
+                    exact path="/:category/posts"
+                    component={CategoryPage}
+                />
+                <Route
+                    exact path="/:category/posts/:post_id"
+                    component={PostPage}
+                />
           </div>
       </MuiThemeProvider>
     );

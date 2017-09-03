@@ -11,6 +11,8 @@ import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 import {green500,white} from 'material-ui/styles/colors'
 
+import {Link} from 'react-router-dom'
+
 import {toDate} from '../utils/helper'
 
 const textStyles={
@@ -49,9 +51,6 @@ class CategoryPage extends React.Component{
             }
         }).then((data)=>{
             this.props.getAllPosts(data.data)
-            this.setState({
-                buttonDisabled:false
-            })
         })
     }
     handleValueChange=(parameter)=>{
@@ -76,14 +75,16 @@ class CategoryPage extends React.Component{
         const {posts,match}=this.props
         const mappedPosts=posts.map((post)=>(
             <Col xs={12} md={12} sm={12} lg={12} key={post.id} style={{marginBottom:'20px'}}>
-                <Card>
-                    <CardHeader
-                        title={post.author}
-                        subtitle={`posted in ${post.category}`}
-                    />
-                    <CardTitle title={post.title} subtitle={`posted on ${toDate(post.timestamp)}`} />
-                    <CardText>{post.body}</CardText>
-                </Card>
+                <Link to={`posts/${post.id}`}>
+                    <Card>
+                        <CardHeader
+                            title={post.author}
+                            subtitle={`posted in ${post.category}`}
+                        />
+                        <CardTitle title={post.title} subtitle={`posted on ${toDate(post.timestamp)}`} />
+                        <CardText>{post.body}</CardText>
+                    </Card>
+                </Link>
             </Col>
         ))
         return(
