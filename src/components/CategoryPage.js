@@ -45,7 +45,7 @@ class CategoryPage extends React.Component{
         const {match}=this.props
         axios({
             method:'get',
-            url:`http://localhost:5001/${match.params.category}/posts`,
+            url:`${process.env.REACT_APP_BACKEND_URL}/${match.params.category}/posts`,
             headers:{
                 'Authorization':'Do I love cats?'
             }

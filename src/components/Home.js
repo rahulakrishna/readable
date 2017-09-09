@@ -8,6 +8,8 @@ import {Row,Col} from 'react-flexbox-grid'
 
 import {Card,CardTitle,CardHeader,CardText} from 'material-ui/Card'
 
+import CircularProgress from 'material-ui/CircularProgress'
+
 import {capitalize,toDate} from '../utils/helper'
 
 import {Link} from 'react-router-dom'
@@ -16,33 +18,43 @@ const NoPostsYet=(props)=>(
     <Col xs={12} md={12} sm={12} lg={12}>
         <Card>
             <CardTitle
-                title={`No posts yet in ${props.category}. Check back later. Or...`}
+                title={`No posts yet in ${props.category}. Check back later.`}
             />
         </Card>
     </Col>
 )
 
 class Home extends React.Component{
+    state={
+        loading:false
+    }
     componentDidMount(){
+        this.setState({
+            loading:true
+        })
         this.listAllCategories()
         this.getAllPosts()
     }
     listAllCategories=()=>{
         axios({
             method:'get',
-            url:'http://localhost:5001/categories',
+            url:`${process.env.REACT_APP_BACKEND_URL}/categories`,
             headers:{
                 'Authorization':'My girlfriend loves me!'
             }
         }).then((data)=>{
             console.log('From the component:',data)
             this.props.list(data)
+            this.setState({
+                loading:false
+            })
         })
     }
     getAllPosts=()=>{
+        console.log(process.env.REACT_APP_BACKEND_URL)
         axios({
             method:'get',
-            url:`http://localhost:5001/posts`,
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts`,
             headers:{
                 'Authorization':'I should be sleeping!'
             }
@@ -88,7 +100,9 @@ class Home extends React.Component{
                         <h1>All Posts</h1>
                         <hr/>
                     </Col>
-                        {(mappedPosts.length>0)?mappedPosts:<NoPostsYet category='All Posts'/>}
+
+                    {(this.state.loading)?<CircularProgress style={{textAlign:'center'}}/>:''}
+                    {(mappedPosts.length>0 && this.state.loading!==true)?mappedPosts:<NoPostsYet category='All Posts'/>}
                 </Row>
             </div>
         )

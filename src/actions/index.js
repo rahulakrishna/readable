@@ -23,7 +23,7 @@ export function postAPost(title,body,author,category) {
     return function (dispatch) {
         axios({
             method:'post',
-            url:'http://localhost:5001/posts',
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts`,
             headers:{
                 'Authorization':'Okay. I finally understand redux-thunk!'
             },
@@ -54,7 +54,7 @@ export function getPostDetails(id) {
     return function (dispatch) {
         axios({
             method:'get',
-            url:`http://localhost:5001/posts/${id}`,
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}`,
             headers:{
                 'Authorization':'Let\'s make a coffee!'
             }
@@ -77,7 +77,7 @@ export function getPostComments(id) {
     return function (dispatch) {
         axios({
             method:'get',
-            url:`http://localhost:5001/posts/${id}/comments`,
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}/comments`,
             headers:{
                 'Authorization':'Sun is up in Bengaluru city!'
             }
@@ -101,7 +101,7 @@ export function postComment(id,body,author) {
     return function (dispatch) {
         axios({
             method:'post',
-            url:'http://localhost:5001/comments',
+            url:`${process.env.REACT_APP_BACKEND_URL}/comments`,
             data:{
                 parentId:id,
                 body,
@@ -119,9 +119,35 @@ export function postComment(id,body,author) {
 }
 
 function postCommentSuccess(data){
-    console.log(data)
     return{
         type:POST_COMMENT_SUCCESS,
+        payload:data
+    }
+}
+
+export const POST_VOTE_SUCCESS='POST_VOTE_SUCCESS'
+
+export function postVote(id,vote) {
+    return function (dispatch) {
+        axios({
+            method:'post',
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}`,
+            data:{
+                option:vote
+            },
+            headers:{
+                'Authorization':'Long time!'
+            }
+        }).then((data)=>{
+            dispatch(postVoteSuccess(data.data))
+        })
+    }
+}
+
+export function postVoteSuccess(data){
+    console.log(data)
+    return{
+        type:POST_VOTE_SUCCESS,
         payload:data
     }
 }

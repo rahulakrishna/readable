@@ -4,7 +4,8 @@ import {
     POST_A_POST_SUCCESS,
     GET_POST_DETAIL_SUCCESS,
     GET_POST_COMMENTS_SUCCESS,
-    POST_COMMENT_SUCCESS
+    POST_COMMENT_SUCCESS,
+    POST_VOTE_SUCCESS
 } from '../actions'
 import {combineReducers} from 'redux'
 
@@ -58,6 +59,9 @@ const postDetailState={
 function postDetailsReducer(state=postDetailState,action) {
     switch (action.type){
         case GET_POST_DETAIL_SUCCESS:{
+            return {...state,details:action.payload}
+        }
+        case POST_VOTE_SUCCESS:{
             return {...state,details:action.payload}
         }
         default:{

@@ -1,10 +1,10 @@
 import React from 'react'
-import {getPostDetails,getPostComments,postComment} from '../actions'
+import {getPostDetails,getPostComments,postComment,postVote} from '../actions'
 
 import {connect} from 'react-redux'
 
 import {Row,Col} from 'react-flexbox-grid'
-import {CardText,Card,CardHeader,CardTitle} from 'material-ui/Card'
+import {CardText,Card,CardHeader,CardTitle,CardActions} from 'material-ui/Card'
 import {List,ListItem} from 'material-ui/List'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
@@ -46,6 +46,9 @@ class Post extends React.Component{
         const {match}=this.props
         this.props.postComment(match.params.post_id,this.state.body,this.state.author)
     }
+    vote=(id,vote)=>{
+        this.props.postVote(id,vote)
+    }
     render(){
         const {details,comments}=this.props
         const mappedComments=comments.map((comment)=>{
@@ -64,8 +67,27 @@ class Post extends React.Component{
                                 title={details.author}
                                 subtitle={`posted in ${details.category}`}
                             />
-                            <CardTitle title={details.title} subtitle={`detailsed on ${toDate(details.timestamp)}`} />
+                            <CardTitle title={details.title} subtitle={`posted on ${toDate(details.timestamp)}`} />
                             <CardText>{details.body}</CardText>
+                            <CardActions>
+                                <div style={{textAlign:'right'}}>
+                                    <RaisedButton
+                                        label='Edit Post'
+                                    />
+                                    <RaisedButton
+                                        label='Upvote'
+                                        onClick={()=>{this.vote(details.id,'upVote')}}
+                                    />
+                                    <RaisedButton
+                                        label={`Votes ${details.voteScore}`}
+                                        disabled={true}
+                                    />
+                                    <RaisedButton
+                                        label='Downvote'
+                                        onClick={()=>{this.vote(details.id,'downVote')}}
+                                    />
+                                </div>
+                            </CardActions>
                         </Card>
                         <h3>Comments</h3>
                         <hr/>
@@ -112,7 +134,8 @@ function mapDispatchToProps(dispatch) {
     return{
         getDetails:(id)=>dispatch(getPostDetails(id)),
         getComments:(id)=>dispatch(getPostComments(id)),
-        postComment:(id,body,author)=>dispatch(postComment(id,body,author))
+        postComment:(id,body,author)=>dispatch(postComment(id,body,author)),
+        postVote:(id,vote)=>dispatch(postVote(id,vote))
     }
 }
 
