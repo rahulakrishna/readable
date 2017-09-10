@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/components/Comment.js" line="39" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="da3cadb3-fe3e-4271-b863-8062db7f3a19" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/utils/api.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/manifest.json" afterPath="$PROJECT_DIR$/public/manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CategoryPage.js" afterPath="$PROJECT_DIR$/src/components/CategoryPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home.js" afterPath="$PROJECT_DIR$/src/components/Home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Comment.js" afterPath="$PROJECT_DIR$/src/components/Comment.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostPage.js" afterPath="$PROJECT_DIR$/src/components/PostPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/helper.js" afterPath="$PROJECT_DIR$/src/utils/helper.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,22 +25,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+      <file leaf-file-name="PostPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/PostPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="-1744">
+              <caret line="145" column="78" lean-forward="false" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="78" />
+              <folding>
+                <marker date="1505070143194" expanded="true" signature="9839:9854" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostPage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/PostPage.js">
+      <file leaf-file-name="Comment.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="74" column="56" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="414">
+              <caret line="38" column="88" lean-forward="false" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +82,8 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="65" lean-forward="false" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
+            <state relative-caret-position="18">
+              <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -108,21 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2268">
-              <caret line="127" column="7" lean-forward="false" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+            <state relative-caret-position="632">
+              <caret line="248" column="20" lean-forward="false" selection-start-line="248" selection-start-column="20" selection-end-line="248" selection-end-column="20" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -133,16 +124,23 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+            <state relative-caret-position="360">
+              <caret line="116" column="52" lean-forward="false" selection-start-line="116" selection-start-column="52" selection-end-line="116" selection-end-column="52" />
               <folding>
-                <element signature="e#0#197#0" expanded="true" />
+                <element signature="e#0#304#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,14 +155,15 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/build/.env" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/components/Home.js" />
         <option value="$PROJECT_DIR$/src/components/CategoryPage.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/actions/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/components/PostPage.js" />
+        <option value="$PROJECT_DIR$/src/components/Comment.js" />
       </list>
     </option>
   </component>
@@ -241,7 +240,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,8 +286,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;actions/i&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;post&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;reducers/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;manif&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/manifest.json&#10;index.ht&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/index.html&#10;actions/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;.env&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;Hom&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;actions/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;Cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;App&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;App.css&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.css&#10;Ca&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;Home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;Cate&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;index.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;src/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.css&#10;index.j&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;utils/he&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;helper&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;reducers/in&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;C&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;H&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;actions/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions&#10;index.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;App.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;App.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;reducer/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;reducers/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers&#10;api.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/api.js&#10;Ho&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;reducers/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js" />
+    <property name="SearchEverywhereHistoryKey" value="PostPage&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;index&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;actions/i&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;post&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;reducers/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;manif&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/manifest.json&#10;index.ht&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/index.html&#10;actions/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;.env&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;Hom&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;actions/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;Cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;App&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;App.css&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.css&#10;Ca&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;Home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;Cate&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;index.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;src/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.css&#10;index.j&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;utils/he&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;helper&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;reducers/in&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;C&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;H&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;actions/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions&#10;index.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;App.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;App.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;reducer/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;reducers/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers&#10;api.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/api.js&#10;Ho&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;reducers/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js" />
     <property name="FullScreen" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -392,27 +392,31 @@
       <workItem from="1504381167646" duration="29029000" />
       <workItem from="1504497335855" duration="1193000" />
       <workItem from="1504940765640" duration="1286000" />
-      <workItem from="1504942584867" duration="473000" />
+      <workItem from="1504942584867" duration="10695000" />
+      <workItem from="1504957179930" duration="2439000" />
+      <workItem from="1504964446250" duration="72000" />
+      <workItem from="1505021841954" duration="76000" />
+      <workItem from="1505067216191" duration="3165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42849000" />
+    <option name="totallyTimeSpent" value="58823000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-37" width="1366" height="805" extended-state="6" />
+    <frame x="0" y="-37" width="1366" height="805" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25018615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.263589" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -433,24 +437,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/PostPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CategoryPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1854">
@@ -495,7 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,7 +499,7 @@
         <state relative-caret-position="990">
           <caret line="64" column="55" lean-forward="false" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="55" />
           <folding>
-            <element signature="e#0#197#0" expanded="true" />
+            <element signature="e#0#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,7 +515,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding />
+          <folding>
+            <marker date="1505070143194" expanded="true" signature="9839:9854" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -589,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +593,7 @@
         <state relative-caret-position="90">
           <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <element signature="e#0#197#0" expanded="true" />
+            <element signature="e#0#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,7 +609,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding />
+          <folding>
+            <marker date="1505070143194" expanded="true" signature="9839:9854" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -683,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +712,7 @@
         <state relative-caret-position="72">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#197#0" expanded="true" />
+            <element signature="e#0#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -790,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,19 +781,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/.env" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="65" lean-forward="false" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1602">
@@ -853,10 +827,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//home/rahul/Works/Nanodegree/readable/src/components/PostPage.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/components/PostPage.js</OriginalElement>
+          <nodes>
+            <node x="836.0" y="916.0">$PROJECT_DIR$/src/components/Comment.js</node>
+            <node x="273.0" y="197.0">$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;</node>
+            <node x="625.0" y="996.0">$PROJECT_DIR$/node_modules/material-ui/styles/colors.js#green500#6191;/home/rahul/Works/Nanodegree/readable/node_modules/material-ui/styles/colors.js#red500#296;/home/rahul/Works/Nanodegree/readable/node_modules/material-ui/styles/colors.js#white#12158;</node>
+            <node x="253.0" y="101.0">$PROJECT_DIR$/src/utils/helper.js#toDate#137;</node>
+            <node x="391.0" y="18.0">$PROJECT_DIR$/node_modules/material-ui/Dialog/index.js</node>
+            <node x="1000.0" y="448.0">$PROJECT_DIR$/node_modules/react-redux/es/index.js#connect#133;</node>
+            <node x="321.0" y="993.0">$PROJECT_DIR$/src/actions/index.js#deletePost#4255;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#editPost#3643;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#getPostComments#1747;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#getPostDetails#1180;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#postComment#2347;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#postVote#3060;</node>
+            <node x="35.0" y="695.0">List;ListItem;</node>
+            <node x="983.0" y="705.0">$PROJECT_DIR$/node_modules/material-ui/TextField/index.js</node>
+            <node x="0.0" y="495.0">Link;</node>
+            <node x="920.0" y="235.0">$PROJECT_DIR$/node_modules/material-ui/RaisedButton/index.js</node>
+            <node x="19.0" y="208.0">Card;CardActions;CardHeader;CardText;CardTitle;</node>
+            <node x="615.0" y="0.0">$PROJECT_DIR$/node_modules/react-flexbox-grid/react-flexbox-grid.d.ts#Col#1548;/home/rahul/Works/Nanodegree/readable/node_modules/react-flexbox-grid/react-flexbox-grid.d.ts#Row#1489;</node>
+            <node x="204.0" y="893.0">$PROJECT_DIR$/node_modules/react/react.js</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="List;ListItem;">
+              <point x="0.0" y="-5.518746542866438" />
+              <point x="-11.812745576278388" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/react-flexbox-grid/react-flexbox-grid.d.ts#Col#1548;/home/rahul/Works/Nanodegree/readable/node_modules/react-flexbox-grid/react-flexbox-grid.d.ts#Row#1489;">
+              <point x="-4.63576229167893" y="-1.873421462204277" />
+              <point x="-4.63576229167893" y="-1.8734214622042487" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/src/utils/helper.js#toDate#137;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/material-ui/Dialog/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/material-ui/RaisedButton/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="Link;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="Card;CardActions;CardHeader;CardText;CardTitle;">
+              <point x="0.0" y="-22.52142960872507" />
+              <point x="0.0" y="-22.521429608725057" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/src/components/Comment.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/src/actions/index.js#deletePost#4255;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#editPost#3643;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#getPostComments#1747;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#getPostDetails#1180;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#postComment#2347;/home/rahul/Works/Nanodegree/readable/src/actions/index.js#postVote#3060;">
+              <point x="25.684537955954568" y="0.0" />
+              <point x="25.684537955954596" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/react-redux/es/index.js#connect#133;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/material-ui/TextField/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/react/react.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/src/components/PostPage.js#Card#254;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardActions#280;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardHeader#259;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardText#245;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#CardTitle#270;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Col#206;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Comment#652;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Dialog#533;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Link#574;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#List#325;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#ListItem#330;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#RaisedButton#417;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#React#7;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#Row#202;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#TextField#371;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#connect#165;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#deletePost#125;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#editPost#111;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostComments#59;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#getPostDetails#39;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#green500#470;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postComment#80;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#postVote#97;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#red500#485;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#toDate#613;/home/rahul/Works/Nanodegree/readable/src/components/PostPage.js#white#479;" target="$PROJECT_DIR$/node_modules/material-ui/styles/colors.js#green500#6191;/home/rahul/Works/Nanodegree/readable/node_modules/material-ui/styles/colors.js#red500#296;/home/rahul/Works/Nanodegree/readable/node_modules/material-ui/styles/colors.js#white#12158;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7395622895622895" x="189.0" y="526.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/node_modules/react/react.js</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="127" column="7" lean-forward="false" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+        <state relative-caret-position="632">
+          <caret line="248" column="20" lean-forward="false" selection-start-line="248" selection-start-column="20" selection-end-line="248" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -865,19 +935,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+        <state relative-caret-position="360">
+          <caret line="116" column="52" lean-forward="false" selection-start-line="116" selection-start-column="52" selection-end-line="116" selection-end-column="52" />
           <folding>
-            <element signature="e#0#197#0" expanded="true" />
+            <element signature="e#0#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="74" column="56" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="-1744">
+          <caret line="145" column="78" lean-forward="false" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="78" />
+          <folding>
+            <marker date="1505070143194" expanded="true" signature="9839:9854" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="38" column="88" lean-forward="false" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

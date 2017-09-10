@@ -5,7 +5,11 @@ import {
     GET_POST_DETAIL_SUCCESS,
     GET_POST_COMMENTS_SUCCESS,
     POST_COMMENT_SUCCESS,
-    POST_VOTE_SUCCESS
+    POST_VOTE_SUCCESS,
+    EDIT_POST_SUCCESS,
+    DELETE_POST_SUCCESS,
+    GET_COMMENT_DETAILS_SUCCESS,
+    COMMENT_VOTE_SUCCESS
 } from '../actions'
 import {combineReducers} from 'redux'
 
@@ -46,6 +50,12 @@ function postsReducer(state=postsState,action) {
                 posts:[...state.posts,action.payload]
             }
         }
+        case DELETE_POST_SUCCESS:{
+            return{
+                ...state,
+                posts:[...state.posts.filter(post=>post.id!==action.payload)]
+            }
+        }
         default:{
             return state
         }
@@ -63,6 +73,12 @@ function postDetailsReducer(state=postDetailState,action) {
         }
         case POST_VOTE_SUCCESS:{
             return {...state,details:action.payload}
+        }
+        case EDIT_POST_SUCCESS:{
+            return {...state,details:action.payload}
+        }
+        case DELETE_POST_SUCCESS:{
+            return {...state,details:{}}
         }
         default:{
             return state
@@ -88,6 +104,24 @@ function getCommentsReducer(state=getCommentsState,action) {
     }
 }
 
+const commentDetailState={
+    details:{}
+}
+
+function commentDetailReducer(state=commentDetailState,action) {
+    switch (action.type){
+        case GET_COMMENT_DETAILS_SUCCESS:{
+            return {...state,details:action.payload}
+        }
+        case COMMENT_VOTE_SUCCESS:{
+            return {...state,details:action.payload}
+        }
+        default:{
+            return state
+        }
+    }
+}
+
 
 
 
@@ -95,5 +129,6 @@ export default combineReducers({
     categoryReducer,
     postsReducer,
     postDetailsReducer,
-    getCommentsReducer
+    getCommentsReducer,
+    commentDetailReducer
 })

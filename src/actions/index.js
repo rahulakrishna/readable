@@ -145,9 +145,107 @@ export function postVote(id,vote) {
 }
 
 export function postVoteSuccess(data){
-    console.log(data)
     return{
         type:POST_VOTE_SUCCESS,
+        payload:data
+    }
+}
+
+export const EDIT_POST_SUCCESS='EDIT_POST_SUCCESS'
+
+export function editPost(id,title,body) {
+    return function (dispatch) {
+        axios({
+            method:'put',
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}`,
+            data:{
+                title,
+                body
+            },
+            headers:{
+                'Authorization':'I hate my Uni'
+            }
+        }).then((data)=>{
+            dispatch(editPostSuccess(data.data))
+        })
+    }
+}
+
+export function editPostSuccess(data) {
+    return {
+        type:EDIT_POST_SUCCESS,
+        payload:data
+    }
+}
+
+export const DELETE_POST_SUCCESS='DELETE_POST_SUCCESS'
+export function deletePost(id) {
+    return function (dispatch) {
+        axios({
+            method:'delete',
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}`,
+            headers:{
+                'Authorization':'I am sorry I am not doing error handling :('
+            }
+        }).then((data)=>{
+            console.log(data)
+            dispatch(deletePostSuccess(id))
+        }).catch((err)=>{
+            console.log(err)
+            dispatch(deletePostSuccess(id))
+        })
+    }
+}
+
+export function deletePostSuccess(id) {
+    return{
+        type:DELETE_POST_SUCCESS,
+        payload:id
+    }
+}
+
+export const GET_COMMENT_DETAILS_SUCCESS='GET_COMMENT_DETAILS_SUCCESS'
+export function getCommentDetails(id) {
+    return function (dispatch) {
+        axios({
+            method:'get',
+            url:`${process.env.REACT_APP_BACKEND_URL}/comments/${id}`,
+            headers:{
+                'Authorization':'I don\'t think the backend is delering anything'
+            }
+        }).then((data)=>{
+            dispatch(getCommentDetailsSuccess(data.data))
+        })
+    }
+}
+
+export function getCommentDetailsSuccess(data){
+    return{
+        type:GET_COMMENT_DETAILS_SUCCESS,
+        payload:data
+    }
+}
+
+export const COMMENT_VOTE_SUCCESS='COMMENT_VOTE_SUCCESS'
+export function voteOnComment(id,vote) {
+    return function (dispatch) {
+        axios({
+            method:'post',
+            url:`${process.env.REACT_APP_BACKEND_URL}/comments/${id}`,
+            data:{
+                option:vote
+            },
+            headers:{
+                'Authorization':'Long time!'
+            }
+        }).then((data)=>{
+            dispatch(voteOnCommentSuccess(data.data))
+        })
+    }
+}
+export function voteOnCommentSuccess(data) {
+    return{
+        type:COMMENT_VOTE_SUCCESS,
         payload:data
     }
 }
