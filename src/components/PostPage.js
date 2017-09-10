@@ -153,7 +153,7 @@ class Post extends React.Component{
                                     </div>
                                 </CardActions>
                             </Card>
-                            <h3>Comments</h3>
+                            <h3>Comments <span style={{fontWeight:'normal',fontSize:'14px'}}>Click on a comment to see more details</span> </h3>
                             <hr/>
                             <List>
                                 {mappedComments}

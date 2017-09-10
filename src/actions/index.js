@@ -249,3 +249,56 @@ export function voteOnCommentSuccess(data) {
         payload:data
     }
 }
+
+export const EDIT_COMMENT_SUCCESS='EDIT_COMMENT_SUCCESS'
+
+export function editComment(id,body) {
+    return function (dispatch) {
+        axios({
+            method:'put',
+            url:`${process.env.REACT_APP_BACKEND_URL}/comments/${id}`,
+            data:{
+                body,
+                timestamp:Date.now()
+            },
+            headers:{
+                'Authorization':'I hate my Uni'
+            }
+        }).then((data)=>{
+            dispatch(editCommentSuccess(data.data))
+        })
+    }
+}
+
+export function editCommentSuccess(data) {
+    return {
+        type:EDIT_COMMENT_SUCCESS,
+        payload:data
+    }
+}
+
+export const DELETE_COMMENT_SUCCESS='DELETE_COMMENT_SUCCESS'
+export function deleteComment(id) {
+    return function (dispatch) {
+        axios({
+            method:'delete',
+            url:`${process.env.REACT_APP_BACKEND_URL}/comments/${id}`,
+            headers:{
+                'Authorization':'I am sorry I am not doing error handling :('
+            }
+        }).then((data)=>{
+            console.log(data)
+            dispatch(deleteCommentSuccess(id))
+        }).catch((err)=>{
+            console.log(err)
+            dispatch(deleteCommentSuccess(id))
+        })
+    }
+}
+
+export function deleteCommentSuccess(id) {
+    return{
+        type:DELETE_COMMENT_SUCCESS,
+        payload:id
+    }
+}

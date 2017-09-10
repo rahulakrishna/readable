@@ -9,7 +9,9 @@ import {
     EDIT_POST_SUCCESS,
     DELETE_POST_SUCCESS,
     GET_COMMENT_DETAILS_SUCCESS,
-    COMMENT_VOTE_SUCCESS
+    COMMENT_VOTE_SUCCESS,
+    EDIT_COMMENT_SUCCESS,
+    DELETE_COMMENT_SUCCESS
 } from '../actions'
 import {combineReducers} from 'redux'
 
@@ -98,6 +100,12 @@ function getCommentsReducer(state=getCommentsState,action) {
         case POST_COMMENT_SUCCESS:{
             return {...state,comments:[...state.comments,action.payload]}
         }
+        case EDIT_COMMENT_SUCCESS:{
+            return {...state,comments:state.comments.filter(com=>com.id!==action.payload.id).concat(action.payload)}
+        }
+        case DELETE_COMMENT_SUCCESS:{
+            return {...state,comments:state.comments.filter(com=>com.id!==action.payload)}
+        }
         default:{
             return state
         }
@@ -114,6 +122,9 @@ function commentDetailReducer(state=commentDetailState,action) {
             return {...state,details:action.payload}
         }
         case COMMENT_VOTE_SUCCESS:{
+            return {...state,details:action.payload}
+        }
+        case EDIT_COMMENT_SUCCESS:{
             return {...state,details:action.payload}
         }
         default:{
