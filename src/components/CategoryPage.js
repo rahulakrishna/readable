@@ -1,19 +1,15 @@
 import React from 'react'
 import {getPosts,postAPost} from '../actions'
 import axios from 'axios'
-
 import {connect} from 'react-redux'
-
-
 import {Row,Col} from 'react-flexbox-grid'
 import {Card,CardTitle,CardText,CardHeader} from 'material-ui/Card'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 import {green500,white} from 'material-ui/styles/colors'
-
 import {Link} from 'react-router-dom'
-
 import {toDate} from '../utils/helper'
+import PropTypes from 'prop-types'
 
 const textStyles={
     underlineStyle:{
@@ -32,6 +28,11 @@ const NoPostsYet=(props)=>(
 )
 
 class CategoryPage extends React.Component{
+    static propTypes={
+        posts:PropTypes.array.isRequired,
+        post:PropTypes.func.isRequired,
+        getAllPosts:PropTypes.func.isRequired
+    }
     constructor(props){
         super(props)
         this.state={

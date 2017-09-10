@@ -1,18 +1,13 @@
 import React from 'react'
-
 import {listCategories,getPosts} from './../actions'
 import {connect} from 'react-redux'
-
 import axios from 'axios'
 import {Row,Col} from 'react-flexbox-grid'
-
 import {Card,CardTitle,CardHeader,CardText} from 'material-ui/Card'
-
 import CircularProgress from 'material-ui/CircularProgress'
-
 import {capitalize,toDate} from '../utils/helper'
-
 import {Link} from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const NoPostsYet=(props)=>(
     <Col xs={12} md={12} sm={12} lg={12}>
@@ -25,6 +20,12 @@ const NoPostsYet=(props)=>(
 )
 
 class Home extends React.Component{
+    static propTypes={
+        categories:PropTypes.array.isRequired,
+        posts:PropTypes.array.isRequired,
+        getAllPosts:PropTypes.func.isRequired,
+        list:PropTypes.func.isRequired
+    }
     state={
         loading:false
     }

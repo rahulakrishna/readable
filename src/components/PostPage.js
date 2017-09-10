@@ -18,13 +18,22 @@ import RaisedButton from 'material-ui/RaisedButton'
 import {green500,white,red500} from 'material-ui/styles/colors'
 import Dialog from 'material-ui/Dialog'
 import {Link} from 'react-router-dom'
-
 import {toDate} from '../utils/helper'
-
 import Comment from './Comment'
+import PropTypes from 'prop-types'
 
 
 class Post extends React.Component{
+    static propTypes={
+        details:PropTypes.object.isRequired,
+        comments:PropTypes.array.isRequired,
+        getDetails:PropTypes.func.isRequired,
+        getComments:PropTypes.func.isRequired,
+        postComment:PropTypes.func.isRequired,
+        postVote:PropTypes.func.isRequired,
+        editPost:PropTypes.func.isRequired,
+        deletePost:PropTypes.func.isRequired
+    }
     constructor(props){
         super(props)
         this.state={

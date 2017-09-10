@@ -6,8 +6,19 @@ import {red500} from 'material-ui/styles/colors'
 import {connect} from 'react-redux'
 import {getCommentDetails,voteOnComment,editComment,deleteComment} from '../actions'
 import {toDate} from '../utils/helper'
+import PropTypes from 'prop-types'
 
 class Comment extends React.Component {
+    static propTypes={
+        commentOpen:PropTypes.bool.isRequired,
+        close:PropTypes.func.isRequired,
+        comment:PropTypes.object.isRequired,
+        commentDetails:PropTypes.object.isRequired,
+        getDetails:PropTypes.func.isRequired,
+        vote:PropTypes.func.isRequired,
+        edit:PropTypes.func.isRequired,
+        deleteComment:PropTypes.func.isRequired
+    }
     constructor(props){
         super(props)
         this.state={
