@@ -14,6 +14,7 @@ import {
     DELETE_COMMENT_SUCCESS
 } from '../actions'
 import {combineReducers} from 'redux'
+import {categoryPageReducer} from './categoryPageReducer'
 
 const categoryState= {
     categories:[
@@ -116,6 +117,10 @@ const commentDetailState={
     details:{}
 }
 
+const addPostState={
+
+}
+
 function commentDetailReducer(state=commentDetailState,action) {
     switch (action.type){
         case GET_COMMENT_DETAILS_SUCCESS:{
@@ -141,5 +146,6 @@ export default combineReducers({
     postsReducer,
     postDetailsReducer,
     getCommentsReducer,
-    commentDetailReducer
+    commentDetailReducer,
+    categoryPageReducer
 })

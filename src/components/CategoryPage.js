@@ -1,5 +1,6 @@
 import React from 'react'
 import {getPosts,postAPost} from '../actions'
+import {updateField,clearValues,disableButton,enableButton} from '../actions/categoryPageActions'
 import axios from 'axios'
 import {connect} from 'react-redux'
 import {Row,Col} from 'react-flexbox-grid'
@@ -36,9 +37,6 @@ class CategoryPage extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            title:'',
-            author:'',
-            body:'',
             buttonDisabled:false
         }
     }
@@ -54,23 +52,12 @@ class CategoryPage extends React.Component{
             this.props.getAllPosts(data.data)
         })
     }
-    handleValueChange=(parameter)=>{
-        return (e)=> {
-            const state={}
-            state[parameter]=e.target.value
-            this.setState(state)
-        }
-    }
     handlePost=()=>{
-        this.setState({
-            buttonDisabled:true
-        },()=>{
-            window.setTimeout(this.setState({
-                buttonDisabled:false
-            }),1000)
-        })
-
-        this.props.post(this.state.title,this.state.body,this.state.author,this.props.match.params.category)
+        const {title,body,author}=this.props.fields
+        this.props.post(title,body,author,this.props.match.params.category)
+        this.props.clearFields()
+        this.props.disableButton()
+        setTimeout(()=>{this.props.enableButton()},1000)
     }
     render(){
         const {posts,match}=this.props
@@ -109,14 +96,16 @@ class CategoryPage extends React.Component{
                                     placeholder="Title of the post"
                                     name="title"
                                     underlineFocusStyle={textStyles.underlineStyle}
-                                    onChange={this.handleValueChange('title')}
+                                    onChange={(e)=>{this.props.updateField(e,'title')}}
+                                    value={this.props.fields.title}
                                 />
                                 <TextField
                                     fullWidth={true}
                                     placeholder="Your name"
                                     name="author"
                                     underlineFocusStyle={textStyles.underlineStyle}
-                                    onChange={this.handleValueChange('author')}
+                                    onChange={(e)=>{this.props.updateField(e,'author')}}
+                                    value={this.props.fields.author}
                                 />
                                 <TextField
                                     fullWidth={true}
@@ -125,7 +114,8 @@ class CategoryPage extends React.Component{
                                     multiLine={true}
                                     rows={4}
                                     underlineFocusStyle={textStyles.underlineStyle}
-                                    onChange={this.handleValueChange('body')}
+                                    onChange={(e)=>{this.props.updateField(e,'body')}}
+                                    value={this.props.fields.body}
                                 />
                                 <RaisedButton
                                     label="Submit"
@@ -133,7 +123,7 @@ class CategoryPage extends React.Component{
                                     backgroundColor={green500}
                                     labelColor={white}
                                     onClick={this.handlePost}
-                                    disabled={this.state.buttonDisabled}
+                                    disabled={this.props.fields.buttonDisabled}
                                 />
                             </CardText>
                         </Card>
@@ -146,14 +136,19 @@ class CategoryPage extends React.Component{
 
 function mapStateToProps(state) {
     return{
-        posts:state.postsReducer.posts
+        posts:state.postsReducer.posts,
+        fields:state.categoryPageReducer.details
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return{
         getAllPosts:(data)=>dispatch(getPosts(data)),
-        post:(title,body,author,category)=>dispatch(postAPost(title,body,author,category))
+        post:(title,body,author,category)=>dispatch(postAPost(title,body,author,category)),
+        updateField:(parameter,e)=>dispatch(updateField(parameter,e)),
+        clearFields:()=>dispatch(clearValues()),
+        enableButton:()=>dispatch(enableButton()),
+        disableButton:()=>dispatch(disableButton())
     }
 }
 

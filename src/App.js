@@ -8,9 +8,9 @@ import {Route} from 'react-router-dom'
 import Home from './components/Home'
 import CategoryPage from './components/CategoryPage'
 import PostPage from './components/PostPage'
-
-import IconButton from 'material-ui/IconButton'
-import FileIcon from 'material-ui/svg-icons/action/book'
+import Popover from 'material-ui/Popover'
+import Menu from 'material-ui/Menu'
+import MenuItem from 'material-ui/MenuItem'
 
 import {Link} from 'react-router-dom'
 
@@ -26,7 +26,6 @@ class App extends Component {
                   title={<Link to="/" style={{color:white}}>Readable</Link>}
                   iconClassNameRight="muidocs-icon-navigation-expand-more"
                   style={{background:green500}}
-                  iconElementLeft={<IconButton><FileIcon/></IconButton>}
               />
                 <Route
                     exact path="/"

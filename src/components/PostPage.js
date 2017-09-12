@@ -37,7 +37,6 @@ class Post extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            id:this.props.match.params.post_id,
             author:'',
             body:'',
             buttonDisabled:false,
