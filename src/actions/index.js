@@ -3,7 +3,20 @@ import uuidv1 from 'uuid/v1'
 
 export const LIST_CATEGORIES='LIST_CATEGORIES'
 
-export function listCategories(data) {
+export function listCategories() {
+    return function (dispatch) {
+        axios({
+            method:'get',
+            url:`${process.env.REACT_APP_BACKEND_URL}/categories`,
+            headers:{
+                'Authorization':'Grrrrrrr!'
+            }
+        }).then((data)=>{
+            dispatch(listCategoriesSuccess(data))
+        })
+    }
+}
+export function listCategoriesSuccess(data) {
     return{
         type:LIST_CATEGORIES,
         payload:data
@@ -11,7 +24,20 @@ export function listCategories(data) {
 }
 
 export const GET_POSTS='GET_POSTS'
-export function getPosts(data) {
+export function getPosts() {
+    return function (dispatch) {
+        axios({
+            method:'get',
+            url:`${process.env.REACT_APP_BACKEND_URL}/posts`,
+            headers:{
+                'Authorization':'I should be sleeping!'
+            }
+        }).then((data)=>{
+            dispatch(getPostsSuccess(data.data))
+        })
+    }
+}
+export function getPostsSuccess(data) {
     return{
         type:GET_POSTS,
         payload:data

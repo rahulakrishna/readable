@@ -1,10 +1,8 @@
 import React from 'react'
 import {listCategories,getPosts} from './../actions'
 import {connect} from 'react-redux'
-import axios from 'axios'
 import {Row,Col} from 'react-flexbox-grid'
 import {Card,CardTitle,CardHeader,CardText} from 'material-ui/Card'
-import CircularProgress from 'material-ui/CircularProgress'
 import {capitalize,toDate} from '../utils/helper'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
@@ -30,38 +28,14 @@ class Home extends React.Component{
         loading:false
     }
     componentDidMount(){
-        this.setState({
-            loading:true
-        })
         this.listAllCategories()
         this.getAllPosts()
     }
     listAllCategories=()=>{
-        axios({
-            method:'get',
-            url:`${process.env.REACT_APP_BACKEND_URL}/categories`,
-            headers:{
-                'Authorization':'My girlfriend loves me!'
-            }
-        }).then((data)=>{
-            console.log('From the component:',data)
-            this.props.list(data)
-            this.setState({
-                loading:false
-            })
-        })
+        this.props.list()
     }
     getAllPosts=()=>{
-        console.log(process.env.REACT_APP_BACKEND_URL)
-        axios({
-            method:'get',
-            url:`${process.env.REACT_APP_BACKEND_URL}/posts`,
-            headers:{
-                'Authorization':'I should be sleeping!'
-            }
-        }).then((data)=>{
-            this.props.getAllPosts(data.data)
-        })
+        this.props.getAllPosts()
     }
     render(){
         const {categories,posts,match}=this.props
@@ -101,8 +75,6 @@ class Home extends React.Component{
                         <h1>All Posts</h1>
                         <hr/>
                     </Col>
-
-                    {(this.state.loading)?<CircularProgress style={{textAlign:'center'}}/>:''}
                     {(mappedPosts.length>0 && this.state.loading!==true)?mappedPosts:<NoPostsYet category='All Posts'/>}
                 </Row>
             </div>
@@ -112,8 +84,8 @@ class Home extends React.Component{
 
 function mapDispatchToProps(dispatch) {
     return{
-        list:(data)=>dispatch(listCategories(data)),
-        getAllPosts:(data)=>dispatch(getPosts(data))
+        list:()=>dispatch(listCategories()),
+        getAllPosts:()=>dispatch(getPosts()),
     }
 }
 
