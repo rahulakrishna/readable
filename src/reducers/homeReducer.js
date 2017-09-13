@@ -1,7 +1,8 @@
-import {CLOSE_NAV,OPEN_NAV} from '../actions/homeActions'
+import {CLOSE_NAV,OPEN_NAV,SORT} from '../actions/homeActions'
 const homeState={
   navOpen:false,
-  anchorEl:{}
+  anchorEl:{},
+    sortBy:'timestamp'
 }
 
 export function homeReducer(state={homeState},action){
@@ -12,6 +13,9 @@ export function homeReducer(state={homeState},action){
     case CLOSE_NAV:{
       return {...state,homeState:{navOpen:false}}
     }
+      case SORT:{
+        return {...state,homeState:{sortBy:action.param}}
+      }
     default:{
         return state
     }

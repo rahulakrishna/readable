@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/components/Home.js" line="31" />
+    <bookmark url="file://$PROJECT_DIR$/src/components/Home.js" line="32" />
     <bookmark url="file://$PROJECT_DIR$/src/components/PostPage.js" line="183" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da3cadb3-fe3e-4271-b863-8062db7f3a19" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/commentActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/commentReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/homeActions.js" afterPath="$PROJECT_DIR$/src/actions/homeActions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CategoryPage.js" afterPath="$PROJECT_DIR$/src/components/CategoryPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home.js" afterPath="$PROJECT_DIR$/src/components/Home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/homeReducer.js" afterPath="$PROJECT_DIR$/src/reducers/homeReducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +30,8 @@
       <file leaf-file-name="CategoryPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CategoryPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+            <state relative-caret-position="402">
+              <caret line="80" column="92" lean-forward="false" selection-start-line="80" selection-start-column="92" selection-end-line="80" selection-end-column="92" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -37,42 +42,37 @@
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="362">
+              <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="85" selection-end-column="33" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <marker date="1505287600979" expanded="false" signature="1230:1250" ph="..." />
-                <marker date="1505287600979" expanded="true" signature="1333:1464" ph="..." />
-                <marker date="1505287600979" expanded="true" signature="1409:1432" ph="..." />
-                <marker date="1505287600979" expanded="true" signature="1432:1453" ph="..." />
-                <marker date="1505287600979" expanded="true" signature="1432:1457" ph="..." />
-                <marker date="1505287600979" expanded="false" signature="1657:1680" ph="..." />
+                <marker date="1505326725214" expanded="false" signature="1384:1404" ph="..." />
+                <marker date="1505326725214" expanded="true" signature="1487:1618" ph="..." />
+                <marker date="1505326725214" expanded="true" signature="1563:1586" ph="..." />
+                <marker date="1505326725214" expanded="true" signature="1586:1607" ph="..." />
+                <marker date="1505326725214" expanded="true" signature="1586:1611" ph="..." />
+                <marker date="1505326725214" expanded="false" signature="1897:1920" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+      <file leaf-file-name="homeActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/homeActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="414">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/AppBar.js">
+      <file leaf-file-name="Comment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-              <folding>
-                <element signature="e#40#65#0" expanded="true" />
-                <marker date="1505302815072" expanded="true" signature="485:681" ph="..." />
-              </folding>
+            <state relative-caret-position="342">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,18 +80,30 @@
       <file leaf-file-name="homeReducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/homeReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="72">
+              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <file leaf-file-name="commentReducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/commentReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="108">
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commentActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,16 +141,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoryPageActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/categoryPageActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
-              <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -167,8 +169,6 @@
         <option value="$PROJECT_DIR$/src/reducers/postPageReducer.js" />
         <option value="$PROJECT_DIR$/src/actions/postPageActions.js" />
         <option value="$PROJECT_DIR$/src/components/PostPage.js" />
-        <option value="$PROJECT_DIR$/src/components/Home.js" />
-        <option value="$PROJECT_DIR$/src/reducers/homeReducer.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/AppBar.js" />
         <option value="$PROJECT_DIR$/src/actions/index.js" />
@@ -176,6 +176,11 @@
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/categoryPageReducer.js" />
         <option value="$PROJECT_DIR$/src/reducers/categoryPostReducer.js" />
+        <option value="$PROJECT_DIR$/src/actions/commentActions.js" />
+        <option value="$PROJECT_DIR$/src/reducers/commentReducer.js" />
+        <option value="$PROJECT_DIR$/src/actions/homeActions.js" />
+        <option value="$PROJECT_DIR$/src/reducers/homeReducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Home.js" />
         <option value="$PROJECT_DIR$/src/components/CategoryPage.js" />
       </list>
     </option>
@@ -193,7 +198,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="-37" />
-    <option name="width" value="1366" />
+    <option name="width" value="1360" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -303,7 +308,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;categ&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/categoryPageReducer.js&#10;Categ&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;homeRe&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/homeReducer.js&#10;App.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;Postpage&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/postPageActions.js&#10;Hom&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;PostPage&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;post&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/postPageActions.js&#10;cate&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/categoryPageActions.js&#10;pos&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;postpa&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/postPageReducer.js&#10;Post&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;reducers/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;Cate&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;App&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;P&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;Comme&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Comment.js&#10;app.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;actions/i&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;manif&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/manifest.json&#10;index.ht&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/index.html&#10;actions/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;.env&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;actions/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;Cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;App.css&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.css&#10;Ca&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;Home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;index.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;src/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.css&#10;index.j&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;utils/he&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;helper&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;reducers/in&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;C&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;H&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;actions/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions&#10;index.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;App.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;reducer/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;reducers/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers&#10;api.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/api.js&#10;Ho&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;reducers/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js" />
+    <property name="SearchEverywhereHistoryKey" value="homered&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/homeReducer.js&#10;homeac&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/homeActions.js&#10;Home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;index&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;categ&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/categoryPageReducer.js&#10;Categ&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;homeRe&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/homeReducer.js&#10;App.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;Postpage&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/postPageActions.js&#10;Hom&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;PostPage&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;post&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/postPageActions.js&#10;cate&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/categoryPageActions.js&#10;pos&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;postpa&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/postPageReducer.js&#10;Post&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;reducers/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;Cate&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;App&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;P&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/PostPage.js&#10;Comme&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Comment.js&#10;app.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;actions/i&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;manif&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/manifest.json&#10;index.ht&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/public/index.html&#10;actions/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;.env&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/.env&#10;actions/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;home&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;Cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;App.css&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.css&#10;Ca&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;cat&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;index.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;src/inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.css&#10;index.j&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;utils/he&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;helper&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/helper.js&#10;reducers/in&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;C&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/CategoryPage.js&#10;H&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js&#10;actions/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions&#10;index.&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/actions/index.js&#10;App.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/App.js&#10;inde&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/index.js&#10;reducer/ind&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers/index.js&#10;reducers/&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/reducers&#10;api.js&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/utils/api.js&#10;Ho&#9;FILE&#9;file:///home/rahul/Works/Nanodegree/readable/src/components/Home.js" />
     <property name="FullScreen" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -416,18 +421,18 @@
       <workItem from="1505067216191" duration="8997000" />
       <workItem from="1505206958331" duration="14826000" />
       <workItem from="1505301251625" duration="6103000" />
-      <workItem from="1505310159686" duration="1316000" />
+      <workItem from="1505310159686" duration="5262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86900000" />
+    <option name="totallyTimeSpent" value="90846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-37" width="1366" height="805" extended-state="1" />
+    <frame x="0" y="-37" width="1360" height="805" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20551005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20643231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -459,46 +464,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1505222902369" expanded="true" signature="10757:10772" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CategoryPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1602">
           <caret line="103" column="20" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1505287600979" expanded="false" signature="1230:1250" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1333:1464" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1409:1432" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1453" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1457" ph="..." />
-            <marker date="1505287600979" expanded="false" signature="1657:1680" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1384:1404" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1487:1618" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1563:1586" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1607" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1611" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1897:1920" ph="..." />
           </folding>
         </state>
       </provider>
@@ -583,12 +560,12 @@
           <caret line="103" column="20" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1505287600979" expanded="false" signature="1230:1250" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1333:1464" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1409:1432" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1453" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1457" ph="..." />
-            <marker date="1505287600979" expanded="false" signature="1657:1680" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1384:1404" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1487:1618" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1563:1586" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1607" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1611" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1897:1920" ph="..." />
           </folding>
         </state>
       </provider>
@@ -675,12 +652,12 @@
           <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1505287600979" expanded="false" signature="1230:1250" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1333:1464" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1409:1432" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1453" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1457" ph="..." />
-            <marker date="1505287600979" expanded="false" signature="1657:1680" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1384:1404" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1487:1618" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1563:1586" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1607" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1611" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1897:1920" ph="..." />
           </folding>
         </state>
       </provider>
@@ -831,16 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="110" column="26" lean-forward="false" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/postPageReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -863,30 +830,6 @@
             <element signature="e#0#25#0" expanded="true" />
             <marker date="1505222902369" expanded="true" signature="10757:10772" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1505287600979" expanded="false" signature="1230:1250" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1333:1464" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1409:1432" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1453" ph="..." />
-            <marker date="1505287600979" expanded="true" signature="1432:1457" ph="..." />
-            <marker date="1505287600979" expanded="false" signature="1657:1680" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/homeReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,10 +896,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/commentReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/homeActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1505326725214" expanded="false" signature="1384:1404" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1487:1618" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1563:1586" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1607" ph="..." />
+            <marker date="1505326725214" expanded="true" signature="1586:1611" ph="..." />
+            <marker date="1505326725214" expanded="false" signature="1897:1920" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/homeReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CategoryPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="402">
+          <caret line="80" column="92" lean-forward="false" selection-start-line="80" selection-start-column="92" selection-end-line="80" selection-end-column="92" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

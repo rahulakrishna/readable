@@ -14,3 +14,11 @@ export function closeNav(){
     type:CLOSE_NAV
   }
 }
+
+export const SORT='SORT'
+export function sortFunc(param) {
+    return{
+      type:SORT,
+        param
+    }
+}

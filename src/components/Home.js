@@ -1,5 +1,6 @@
 import React from 'react'
 import {listCategories,getPosts} from './../actions'
+import {sortFunc} from '../actions/homeActions'
 import {connect} from 'react-redux'
 import {Row,Col} from 'react-flexbox-grid'
 import {Card,CardTitle,CardHeader,CardText} from 'material-ui/Card'
@@ -34,6 +35,10 @@ class Home extends React.Component{
     getAllPosts=()=>{
         this.props.getAllPosts()
     }
+    sortFunc=(e)=>{
+        console.log(e.target.value)
+        this.props.sortFunc(e.target.value)
+    }
     render(){
         const {categories,posts,match}=this.props
         const mappedCategories=categories.map((cat)=>{
@@ -47,13 +52,15 @@ class Home extends React.Component{
                 </Col>
             )
         })
-        const mappedPosts=posts.map((post)=>(
+        const mappedPosts=posts.sort((a,b)=>{
+            return b[this.props.sortBy]-a[this.props.sortBy]
+        }).map((post)=>(
             <Col xs={12} md={12} sm={12} lg={12} key={post.id} style={{marginBottom:'20px'}}>
                 <Link to={`${post.category}/posts/${post.id}`}>
                     <Card>
                         <CardHeader
                             title={post.author}
-                            subtitle={`posted in ${post.category}`}
+                            subtitle={`posted in ${post.category}, ${post.voteScore} upvotes`}
                         />
                         <CardTitle title={post.title} subtitle={`posted on ${toDate(post.timestamp)}`} />
                         <CardText>{post.body}</CardText>
@@ -72,6 +79,12 @@ class Home extends React.Component{
                         <h1>All Posts</h1>
                         <hr/>
                     </Col>
+                    <div>
+                        Sort by: <select onChange={(e)=>{this.sortFunc(e)}}>
+                            <option value='timestamp'>Time</option>
+                            <option value='voteScore'>Votes</option>
+                        </select>
+                    </div>
                     {(mappedPosts.length>0)?mappedPosts:<NoPostsYet category='All Posts'/>}
                 </Row>
             </div>
@@ -83,13 +96,15 @@ function mapDispatchToProps(dispatch) {
     return{
         list:()=>dispatch(listCategories()),
         getAllPosts:()=>dispatch(getPosts()),
+        sortFunc:(param)=>dispatch(sortFunc(param))
     }
 }
 
 function mapStateToProps(state) {
     return {
         categories: state.categoryReducer.categories,
-        posts: state.postsReducer.posts
+        posts: state.postsReducer.posts,
+        sortBy:state.homeReducer.homeState.sortBy
     }
 }
 

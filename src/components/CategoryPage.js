@@ -1,6 +1,7 @@
 import React from 'react'
 import {getPosts,postAPost} from '../actions'
 import {updateField,clearValues,disableButton,enableButton,getCategoryPosts} from '../actions/categoryPageActions'
+import {sortFunc} from '../actions/homeActions'
 import axios from 'axios'
 import {connect} from 'react-redux'
 import {Row,Col} from 'react-flexbox-grid'
@@ -59,19 +60,25 @@ class CategoryPage extends React.Component{
         this.props.disableButton()
         setTimeout(()=>{this.props.enableButton()},1000)
     }
+    sortFunc=(e)=>{
+        this.props.sortFunc(e.target.value)
+    }
     render(){
         const {posts,match}=this.props
         const category=match.params.category
         if(this.state.category!==category){
             this.getCategoryPosts()
         }
-        const mappedPosts=posts.map((post)=>(
+        console.log(this.props.posts)
+        const mappedPosts=posts.sort((a,b)=>{
+            return b[this.props.sortBy]-a[this.props.sortBy]
+        }).map((post)=>(
             <Col xs={12} md={12} sm={12} lg={12} key={post.id} style={{marginBottom:'20px'}}>
                 <Link to={`posts/${post.id}`}>
                     <Card>
                         <CardHeader
                             title={post.author}
-                            subtitle={`posted in ${post.category}`}
+                            subtitle={`posted in ${post.category}, ${post.voteScore} upvotes`}
                         />
                         <CardTitle title={post.title} subtitle={`posted on ${toDate(post.timestamp)}`} />
                         <CardText>{post.body}</CardText>
@@ -86,6 +93,12 @@ class CategoryPage extends React.Component{
                         <h1>Posts in /{match.params.category}</h1>
                         <hr/>
                     </Col>
+                    <div style={{width:'100%'}}>
+                        Sort by: <select onChange={(e)=>{this.sortFunc(e)}}>
+                        <option value='timestamp'>Time</option>
+                        <option value='voteScore'>Votes</option>
+                    </select>
+                    </div>
                     {(mappedPosts.length>0)?mappedPosts:<NoPostsYet category={match.params.category}/>}
                 </Row>
                 <Row>
@@ -141,7 +154,8 @@ class CategoryPage extends React.Component{
 function mapStateToProps(state) {
     return{
         posts:state.categoryPostReducer.posts,
-        fields:state.categoryPageReducer.details
+        fields:state.categoryPageReducer.details,
+        sortBy:state.homeReducer.sortBy
     }
 }
 
@@ -153,7 +167,8 @@ function mapDispatchToProps(dispatch) {
         clearFields:()=>dispatch(clearValues()),
         enableButton:()=>dispatch(enableButton()),
         disableButton:()=>dispatch(disableButton()),
-        getCategoryPosts:(category)=>dispatch(getCategoryPosts(category))
+        getCategoryPosts:(category)=>dispatch(getCategoryPosts(category)),
+        sortFunc:(params)=>dispatch(sortFunc(params))
     }
 }
 
