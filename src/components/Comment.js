@@ -5,6 +5,7 @@ import TextField from 'material-ui/TextField'
 import {red500} from 'material-ui/styles/colors'
 import {connect} from 'react-redux'
 import {getCommentDetails,voteOnComment,editComment,deleteComment} from '../actions'
+import {showEditDialog,hideEditDialog,updateCommentField} from '../actions/commentActions'
 import {toDate} from '../utils/helper'
 import PropTypes from 'prop-types'
 
@@ -19,26 +20,14 @@ class Comment extends React.Component {
         edit:PropTypes.func.isRequired,
         deleteComment:PropTypes.func.isRequired
     }
-    constructor(props){
-        super(props)
-        this.state={
-            showEditDialog:false,
-            editComment:''
-        }
-    }
     componentWillReceiveProps(){
         if(this.props.comment.id!==this.props.commentDetails.id){
             this.props.getDetails(this.props.comment.id)
-            this.setState({
-                editComment:this.props.comment.body
-            })
         }
     }
     edit=()=>{
-        this.props.edit(this.props.commentDetails.id,this.state.editComment)
-        this.setState({
-            showEditDialog:false
-        })
+        this.props.edit(this.props.commentDetails.id,this.props.commentState.editComment)
+        this.props.hideCommentEditDialog()
     }
     deleteComment=()=>{
         this.props.deleteComment(this.props.commentDetails.id)
@@ -59,7 +48,10 @@ class Comment extends React.Component {
                             />,
                             <RaisedButton
                                 label="Edit"
-                                onClick={()=>{this.setState({showEditDialog:true})}}
+                                onClick={()=>{
+                                    this.props.updateCommentField(this.props.comment.body)
+                                    this.props.showCommentEditDialog()
+                                }}
                             />,
                             <RaisedButton
                                 label="Upvote"
@@ -88,13 +80,13 @@ class Comment extends React.Component {
 
                     {/*Edit Dialog follows*/}
                     <Dialog
-                        open={this.state.showEditDialog}
+                        open={this.props.commentState.showEditDialog}
                         title={`Edit ${this.props.commentDetails.author}'s comment`}
                         actions={
                             [
                                 <RaisedButton
                                     label="Close"
-                                    onClick={()=>{this.setState({showEditDialog:false})}}
+                                    onClick={()=>{this.props.hideCommentEditDialog()}}
                                 />,
                                 <RaisedButton
                                     label="Submit"
@@ -106,8 +98,8 @@ class Comment extends React.Component {
                         <TextField
                             floatingLabelText="Comment"
                             fullWidth={true}
-                            value={this.state.editComment}
-                            onChange={(e)=>{this.setState({editComment:e.target.value})}}
+                            value={this.props.commentState.editComment}
+                            onChange={(e)=>{this.props.updateCommentField(e.target.value)}}
                         />
                     </Dialog>
             </div>
@@ -117,7 +109,8 @@ class Comment extends React.Component {
 
 function mapStateToProps(state) {
     return{
-        commentDetails:state.commentDetailReducer.details
+        commentDetails:state.commentDetailReducer.details,
+        commentState:state.commentReducer.commentState
     }
 }
 
@@ -126,7 +119,10 @@ function mapDispatchToProps(dispatch) {
         getDetails:(id)=>dispatch(getCommentDetails(id)),
         vote:(id,value)=>dispatch(voteOnComment(id,value)),
         edit:(id,body)=>dispatch(editComment(id,body)),
-        deleteComment:(id)=>dispatch(deleteComment(id))
+        deleteComment:(id)=>dispatch(deleteComment(id)),
+        showCommentEditDialog:()=>dispatch(showEditDialog()),
+        hideCommentEditDialog:()=>dispatch(hideEditDialog()),
+        updateCommentField:(comment)=>dispatch(updateCommentField(comment))
     }
 }
 

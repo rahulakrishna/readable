@@ -18,6 +18,7 @@ import {categoryPageReducer} from './categoryPageReducer'
 import {postPageReducer} from './postPageReducer'
 import {homeReducer} from './homeReducer'
 import {categoryPostReducer} from './categoryPostReducer'
+import {commentReducer} from './commentReducer'
 
 const categoryState= {
     categories:[
@@ -153,5 +154,6 @@ export default combineReducers({
     categoryPageReducer,
     postPageReducer,
     homeReducer,
-    categoryPostReducer
+    categoryPostReducer,
+    commentReducer
 })

@@ -10,6 +10,7 @@ import {connect} from 'react-redux'
 import {green500,white} from 'material-ui/styles/colors'
 
 import {openNav,closeNav} from '../actions/homeActions'
+import {listCategories} from '../actions'
 import {Link} from 'react-router-dom'
 
 class RenderedAppBar extends React.Component{
@@ -28,6 +29,7 @@ class RenderedAppBar extends React.Component{
                     style={{background:green500}}
                      onClick={(e)=>{
                        e.preventDefault()
+                        this.props.listCategories()
                        this.props.openNav(e)
                      }}
                 />
@@ -58,7 +60,8 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
     return{
         closeNav:()=>dispatch(closeNav()),
-        openNav:(e)=>dispatch(openNav(e))
+        openNav:(e)=>dispatch(openNav(e)),
+        listCategories:()=>dispatch(listCategories())
     }
 }
 
