@@ -6,19 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da3cadb3-fe3e-4271-b863-8062db7f3a19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/AppBar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/categoryPostReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/categoryPageActions.js" afterPath="$PROJECT_DIR$/src/actions/categoryPageActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/postPageActions.js" afterPath="$PROJECT_DIR$/src/actions/postPageActions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CategoryPage.js" afterPath="$PROJECT_DIR$/src/components/CategoryPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home.js" afterPath="$PROJECT_DIR$/src/components/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostPage.js" afterPath="$PROJECT_DIR$/src/components/PostPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/categoryPageReducer.js" afterPath="$PROJECT_DIR$/src/reducers/categoryPageReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/postPageReducer.js" afterPath="$PROJECT_DIR$/src/reducers/postPageReducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,8 +25,8 @@
       <file leaf-file-name="CategoryPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CategoryPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="37" column="167" lean-forward="false" selection-start-line="37" selection-start-column="167" selection-end-line="37" selection-end-column="167" />
+            <state relative-caret-position="324">
+              <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -427,12 +416,12 @@
       <workItem from="1505067216191" duration="8997000" />
       <workItem from="1505206958331" duration="14826000" />
       <workItem from="1505301251625" duration="6103000" />
-      <workItem from="1505310159686" duration="476000" />
+      <workItem from="1505310159686" duration="1316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86060000" />
+    <option name="totallyTimeSpent" value="86900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-37" width="1366" height="805" extended-state="1" />
@@ -966,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CategoryPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="37" column="167" lean-forward="false" selection-start-line="37" selection-start-column="167" selection-end-line="37" selection-end-column="167" />
+        <state relative-caret-position="324">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

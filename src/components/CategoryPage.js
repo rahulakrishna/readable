@@ -44,11 +44,9 @@ class CategoryPage extends React.Component{
         })
     }
     componentWillReceiveProps(){
-        const {match}=this.props
-        const category=match.params.category
-        if(this.state.category!==category){
-            this.getCategoryPosts()
-        }
+        this.setState({
+            category:this.props.match.params.category
+        })
     }
     getCategoryPosts=()=>{
         const {match}=this.props
@@ -63,6 +61,10 @@ class CategoryPage extends React.Component{
     }
     render(){
         const {posts,match}=this.props
+        const category=match.params.category
+        if(this.state.category!==category){
+            this.getCategoryPosts()
+        }
         const mappedPosts=posts.map((post)=>(
             <Col xs={12} md={12} sm={12} lg={12} key={post.id} style={{marginBottom:'20px'}}>
                 <Link to={`posts/${post.id}`}>
