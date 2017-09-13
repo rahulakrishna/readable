@@ -11,7 +11,7 @@ export function listCategories() {
             method:'get',
             url:`${process.env.REACT_APP_BACKEND_URL}/categories`,
             headers:{
-                'Authorization':'Grrrrrrr!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(listCategoriesSuccess(data))
@@ -32,7 +32,7 @@ export function getPosts() {
             method:'get',
             url:`${process.env.REACT_APP_BACKEND_URL}/posts`,
             headers:{
-                'Authorization':'I should be sleeping!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(getPostsSuccess(data.data))
@@ -53,7 +53,7 @@ export function postAPost(title,body,author,category) {
             method:'post',
             url:`${process.env.REACT_APP_BACKEND_URL}/posts`,
             headers:{
-                'Authorization':'Okay. I finally understand redux-thunk!'
+                'Authorization':'asdfghjkl'
             },
             data:{
                 id:uuidv1(),
@@ -85,7 +85,7 @@ export function getPostDetails(id) {
             method:'get',
             url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}`,
             headers:{
-                'Authorization':'Let\'s make a coffee!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(getPostDetailsSuccess(data.data))
@@ -108,7 +108,7 @@ export function getPostComments(id) {
             method:'get',
             url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}/comments`,
             headers:{
-                'Authorization':'Sun is up in Bengaluru city!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(getPostCommentsSuccess(data.data))
@@ -139,7 +139,7 @@ export function postComment(id,body,author) {
                 timestamp:Date.now()
             },
             headers:{
-                'Authorization':'Bengaluru is cool!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(postCommentSuccess(data.data))
@@ -165,7 +165,7 @@ export function postVote(id,vote) {
                 option:vote
             },
             headers:{
-                'Authorization':'Long time!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(postVoteSuccess(data.data))
@@ -192,7 +192,7 @@ export function editPost(id,title,body) {
                 body
             },
             headers:{
-                'Authorization':'I hate my Uni'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(editPostSuccess(data.data))
@@ -214,13 +214,13 @@ export function deletePost(id) {
             method:'delete',
             url:`${process.env.REACT_APP_BACKEND_URL}/posts/${id}`,
             headers:{
-                'Authorization':'I am sorry I am not doing error handling :('
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             console.log(data)
             dispatch(deletePostSuccess(id))
         }).catch((err)=>{
-            console.log(err)
+            console.error(err)
             dispatch(deletePostSuccess(id))
         })
     }
@@ -240,7 +240,7 @@ export function getCommentDetails(id) {
             method:'get',
             url:`${process.env.REACT_APP_BACKEND_URL}/comments/${id}`,
             headers:{
-                'Authorization':'I don\'t think the backend is delering anything'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(getCommentDetailsSuccess(data.data))
@@ -265,7 +265,7 @@ export function voteOnComment(id,vote) {
                 option:vote
             },
             headers:{
-                'Authorization':'Long time!'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(voteOnCommentSuccess(data.data))
@@ -291,7 +291,7 @@ export function editComment(id,body) {
                 timestamp:Date.now()
             },
             headers:{
-                'Authorization':'I hate my Uni'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             dispatch(editCommentSuccess(data.data))
@@ -313,7 +313,7 @@ export function deleteComment(id) {
             method:'delete',
             url:`${process.env.REACT_APP_BACKEND_URL}/comments/${id}`,
             headers:{
-                'Authorization':'I am sorry I am not doing error handling :('
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             console.log(data)

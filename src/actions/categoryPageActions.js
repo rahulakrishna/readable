@@ -41,7 +41,7 @@ export function getCategoryPosts(category) {
             method:'get',
             url:`${process.env.REACT_APP_BACKEND_URL}/${category}/posts`,
             headers:{
-                'Authorization':'Do I love cats?'
+                'Authorization':'asdfghjkl'
             }
         }).then((data)=>{
             console.log(data)
