@@ -1,6 +1,8 @@
 import axios from 'axios'
 import uuidv1 from 'uuid/v1'
 
+import {addPostToCategory} from './categoryPageActions'
+
 export const LIST_CATEGORIES='LIST_CATEGORIES'
 
 export function listCategories() {
@@ -63,6 +65,7 @@ export function postAPost(title,body,author,category) {
             }
         }).then((data)=>{
             dispatch(postAPostSuccess(data))
+            dispatch(addPostToCategory(data.data))
         })
     }
 }

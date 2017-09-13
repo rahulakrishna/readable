@@ -15,6 +15,9 @@ import {
 } from '../actions'
 import {combineReducers} from 'redux'
 import {categoryPageReducer} from './categoryPageReducer'
+import {postPageReducer} from './postPageReducer'
+import {homeReducer} from './homeReducer'
+import {categoryPostReducer} from './categoryPostReducer'
 
 const categoryState= {
     categories:[
@@ -147,5 +150,8 @@ export default combineReducers({
     postDetailsReducer,
     getCommentsReducer,
     commentDetailReducer,
-    categoryPageReducer
+    categoryPageReducer,
+    postPageReducer,
+    homeReducer,
+    categoryPostReducer
 })

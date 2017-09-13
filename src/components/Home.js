@@ -24,9 +24,6 @@ class Home extends React.Component{
         getAllPosts:PropTypes.func.isRequired,
         list:PropTypes.func.isRequired
     }
-    state={
-        loading:false
-    }
     componentDidMount(){
         this.listAllCategories()
         this.getAllPosts()
@@ -75,7 +72,7 @@ class Home extends React.Component{
                         <h1>All Posts</h1>
                         <hr/>
                     </Col>
-                    {(mappedPosts.length>0 && this.state.loading!==true)?mappedPosts:<NoPostsYet category='All Posts'/>}
+                    {(mappedPosts.length>0)?mappedPosts:<NoPostsYet category='All Posts'/>}
                 </Row>
             </div>
         )

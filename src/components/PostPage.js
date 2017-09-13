@@ -8,6 +8,19 @@ import {
     deletePost
 } from '../actions'
 
+import {
+    updateField,
+    enableButton,
+    disableButton,
+    showEditDialog,
+    hideEditDialog,
+    showDeleteDialog,
+    hideDeleteDialog,
+    showCommentDialog,
+    hideCommentDialog,
+    updateEditDialog
+} from '../actions/postPageActions'
+
 import {connect} from 'react-redux'
 
 import {Row,Col} from 'react-flexbox-grid'
@@ -70,12 +83,14 @@ class Post extends React.Component{
             }),1000)
         })
         const {match}=this.props
-        this.props.postComment(match.params.post_id,this.state.body,this.state.author)
+        this.props.postComment(match.params.post_id,this.props.applicationState.body,this.props.applicationState.author)
     }
     vote=(id,vote)=>{
         this.props.postVote(id,vote)
     }
     editPost=(details)=>{
+        this.props.showEditDialog()
+        this.props.updateEditDialog(details.body,details.title)
         this.setState({
             showEditDialog:true,
             newTitle:details.title,
@@ -83,20 +98,17 @@ class Post extends React.Component{
         })
     }
     handleEdit=()=>{
-        const {id,newBody,newTitle}=this.state
-        this.props.editPost(id,newTitle,newBody)
-        this.setState({
-            showEditDialog:false
-        })
+        const id=this.props.match.params.post_id
+        this.props.editPost(id,this.props.applicationState.newTitle,this.props.applicationState.newBody)
+        this.props.hideEditDialog()
     }
-    deletePost=(details)=>{
-        this.setState({
-            showDeleteDialog:true
-        })
+    deletePost=()=>{
+        this.props.showDeleteDialog()
     }
     handleDelete=()=>{
-        const {id}=this.state
+        const id=this.props.match.params.post_id
         this.props.deletePost(id)
+        this.props.hideDeleteDialog()
     }
     selectComment=(comment)=>{
         console.log(comment)
@@ -169,14 +181,14 @@ class Post extends React.Component{
                                     <TextField
                                         fullWidth={true}
                                         placeholder="Your name"
-                                        onChange={this.handleValueChange('author')}
+                                        onChange={(e)=>{this.props.updateField(e,'author')}}
                                     />
                                     <TextField
                                         fullWidth={true}
                                         placeholder="Your 2 cents..."
                                         multiLine={true}
                                         rows={2}
-                                        onChange={this.handleValueChange('body')}
+                                        onChange={(e)=>{this.props.updateField(e,'body')}}
                                     />
                                     <RaisedButton
                                         label="Comment"
@@ -196,28 +208,27 @@ class Post extends React.Component{
                         actions={[
                             <RaisedButton
                                 label='Cancel'
-                                onClick={()=>{this.setState({showEditDialog:false})}}
+                                onClick={()=>{this.props.hideEditDialog()}}
                             />,
                             <RaisedButton
                                 label='Submit'
                                 onClick={()=>{this.handleEdit()}}
-                                disabled={this.state.editSubmitButtonDisabled}
                             />
                         ]}
-                        open={this.state.showEditDialog}
-                        onRequestClose={()=>{this.setState({showEditDialog:false})}}
+                        open={this.props.applicationState.showEditDialog}
+                        onRequestClose={()=>{this.props.hideEditDialog()}}
                     >
                         <TextField
                             fullWidth={true}
                             floatingLabelText="Title"
-                            value={this.state.newTitle}
-                            onChange={this.handleValueChange('newTitle')}
+                            value={this.props.applicationState.newTitle}
+                            onChange={(e)=>{this.props.updateField(e,'newTitle')}}
                         />
                         <TextField
                             fullWidth={true}
                             floatingLabelText="Body"
-                            value={this.state.newBody}
-                            onChange={this.handleValueChange('newBody')}
+                            value={this.props.applicationState.newBody}
+                            onChange={(e)=>{this.props.updateField(e,'newBody')}}
                             multiLine={true}
                         />
                     </Dialog>
@@ -227,7 +238,7 @@ class Post extends React.Component{
                         actions={[
                             <RaisedButton
                                 label='Cancel'
-                                onClick={()=>{this.setState({showEditDialog:false})}}
+                                onClick={()=>{this.props.hideDeleteDialog()}}
                             />,
                             <RaisedButton
                                 label='Delete'
@@ -238,8 +249,8 @@ class Post extends React.Component{
                                 }}
                             />
                         ]}
-                        open={this.state.showDeleteDialog}
-                        onRequestClose={()=>{this.setState({showDeleteDialog:false})}}
+                        open={this.props.applicationState.showDeleteDialog}
+                        onRequestClose={()=>{this.props.hideDeleteDialog()}}
                     >
 
                     </Dialog>
@@ -263,7 +274,8 @@ class Post extends React.Component{
 function mapStateToProps(state) {
     return{
         details:state.postDetailsReducer.details,
-        comments:state.getCommentsReducer.comments
+        comments:state.getCommentsReducer.comments,
+        applicationState:state.postPageReducer.applicationState
     }
 }
 
@@ -274,7 +286,17 @@ function mapDispatchToProps(dispatch) {
         postComment:(id,body,author)=>dispatch(postComment(id,body,author)),
         postVote:(id,vote)=>dispatch(postVote(id,vote)),
         editPost:(id,title,body)=>dispatch(editPost(id,title,body)),
-        deletePost:(id)=>dispatch(deletePost(id))
+        deletePost:(id)=>dispatch(deletePost(id)),
+        updateField:(e,parameter)=>dispatch((updateField(e,parameter))),
+        enableButton:()=>dispatch(enableButton()),
+        disableButton:()=>dispatch(disableButton()),
+        showEditDialog:()=>dispatch(showEditDialog()),
+        hideEditDialog:()=>dispatch(hideEditDialog()),
+        showDeleteDialog:()=>dispatch(showDeleteDialog()),
+        hideDeleteDialog:()=>dispatch(hideDeleteDialog()),
+        showCommentDialog:()=>dispatch(showCommentDialog()),
+        hideCommentDialog:()=>dispatch(hideCommentDialog()),
+        updateEditDialog:(newBody,newTitle)=>dispatch(updateEditDialog(newBody,newTitle))
     }
 }
 

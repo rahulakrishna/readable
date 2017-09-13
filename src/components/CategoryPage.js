@@ -1,6 +1,6 @@
 import React from 'react'
 import {getPosts,postAPost} from '../actions'
-import {updateField,clearValues,disableButton,enableButton} from '../actions/categoryPageActions'
+import {updateField,clearValues,disableButton,enableButton,getCategoryPosts} from '../actions/categoryPageActions'
 import axios from 'axios'
 import {connect} from 'react-redux'
 import {Row,Col} from 'react-flexbox-grid'
@@ -34,23 +34,25 @@ class CategoryPage extends React.Component{
         post:PropTypes.func.isRequired,
         getAllPosts:PropTypes.func.isRequired
     }
-    constructor(props){
-        super(props)
-        this.state={
-            buttonDisabled:false
-        }
+    state={
+        category:''//I need this to determine the route change. ComponentDidMount Won't get called if you change the route to this component from this component itself. And ComponentWillReceiveProps gets called too many times.
     }
     componentDidMount(){
-        const {match}=this.props
-        axios({
-            method:'get',
-            url:`${process.env.REACT_APP_BACKEND_URL}/${match.params.category}/posts`,
-            headers:{
-                'Authorization':'Do I love cats?'
-            }
-        }).then((data)=>{
-            this.props.getAllPosts(data.data)
+        this.getCategoryPosts()
+        this.setState({
+            category:this.props.match.params.category
         })
+    }
+    componentWillReceiveProps(){
+        const {match}=this.props
+        const category=match.params.category
+        if(this.state.category!==category){
+            this.getCategoryPosts()
+        }
+    }
+    getCategoryPosts=()=>{
+        const {match}=this.props
+        this.props.getCategoryPosts(match.params.category)
     }
     handlePost=()=>{
         const {title,body,author}=this.props.fields
@@ -136,7 +138,7 @@ class CategoryPage extends React.Component{
 
 function mapStateToProps(state) {
     return{
-        posts:state.postsReducer.posts,
+        posts:state.categoryPostReducer.posts,
         fields:state.categoryPageReducer.details
     }
 }
@@ -148,7 +150,8 @@ function mapDispatchToProps(dispatch) {
         updateField:(parameter,e)=>dispatch(updateField(parameter,e)),
         clearFields:()=>dispatch(clearValues()),
         enableButton:()=>dispatch(enableButton()),
-        disableButton:()=>dispatch(disableButton())
+        disableButton:()=>dispatch(disableButton()),
+        getCategoryPosts:(category)=>dispatch(getCategoryPosts(category))
     }
 }
 
