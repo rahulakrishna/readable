@@ -12,12 +12,13 @@ import {green500,white} from 'material-ui/styles/colors'
 import {openNav,closeNav} from '../actions/homeActions'
 import {listCategories} from '../actions'
 import {Link} from 'react-router-dom'
+import {capitalize} from '../utils/helper'
 
 class RenderedAppBar extends React.Component{
     render(){
         const categoryLinks=this.props.categories.map((cat)=>(
             <Link to={`/${cat.path}/posts`} key={cat.path}>
-                <MenuItem primaryText={cat.name}/>
+                <MenuItem primaryText={capitalize(cat.name)}/>
             </Link>
         ))
         console.log(this.props.categories)

@@ -5,10 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/PostPage.js" line="183" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da3cadb3-fe3e-4271-b863-8062db7f3a19" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/categoryPageActions.js" afterPath="$PROJECT_DIR$/src/actions/categoryPageActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-    </list>
+    <list default="true" id="da3cadb3-fe3e-4271-b863-8062db7f3a19" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -71,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postPageActions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="postPageActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/postPageActions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="810">
@@ -115,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoryPageActions.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="categoryPageActions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/categoryPageActions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -417,15 +414,15 @@
       <workItem from="1505067216191" duration="8997000" />
       <workItem from="1505206958331" duration="14826000" />
       <workItem from="1505301251625" duration="6103000" />
-      <workItem from="1505310159686" duration="11558000" />
+      <workItem from="1505310159686" duration="12190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97142000" />
+    <option name="totallyTimeSpent" value="97774000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-37" width="1360" height="805" extended-state="1" />
+    <frame x="0" y="-37" width="1360" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20643231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -926,14 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/categoryPageActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -966,6 +955,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/categoryPageActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="42" />
           <folding />
         </state>
       </provider>
